@@ -8,5 +8,3 @@ def fancode_users_completion():
     user_with_loss_completion = logics.filter_users_fc(users,todos)
 
     assert len(user_with_loss_completion) == 0, f"Users with low task completion: {user_with_loss_completion}"
-
-fancode_users_completion()
