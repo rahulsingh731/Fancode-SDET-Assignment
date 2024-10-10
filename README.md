@@ -130,4 +130,4 @@ After running the validation script, the following output is possible:
    ```
    Users with low task completion: [('John Doe', 40.0), ('Jane Smith', 30.0)]
    ```
->>>>>>> 1c40e02e8cd92a3be2c1a7cd9fe0b8feda6200ae
+
