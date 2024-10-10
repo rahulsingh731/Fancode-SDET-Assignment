@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1c40e02e8cd92a3be2c1a7cd9fe0b8feda6200ae
 requests
 pytest
 behave

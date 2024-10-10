@@ -11,6 +11,7 @@ def get_users():
 
 
 def get_todos():
+    """Fetch all todo list from /todos endpoint."""
     response = requests.get(Base_URL + "/todos")
     response.raise_for_status()
     return response.json()
