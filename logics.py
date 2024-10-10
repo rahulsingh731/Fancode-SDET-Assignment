@@ -9,6 +9,6 @@ def filter_users_fc(users,todos):
     users_with_low_completion = []
     for user in users:
         comp_percentage = calc_percentage(user,todos)
-        if comp_percentage>50:
+        if comp_percentage<50:
             users_with_low_completion.append((user['name'],comp_percentage))
     return users_with_low_completion
