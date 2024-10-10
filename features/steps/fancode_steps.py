@@ -1,6 +1,8 @@
 from behave import given, when, then
+
 import api_client
 import logics
+
 
 @given('I have the list of users')
 def step_impl(context):
@@ -16,5 +18,5 @@ def step_impl(context):
 
 @then('I should see that all users from FanCode have more than 50% of tasks completed')
 def step_impl(context):
-    users_with_low_completion = logics.calc_percentage(context.fancode_users, context.todos)
+    users_with_low_completion = logics.filter_users_fc(context.fancode_users, context.todos)
     assert len(users_with_low_completion) == 0, f"Users with low task completion: {users_with_low_completion}"
